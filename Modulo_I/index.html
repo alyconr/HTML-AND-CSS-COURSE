@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MODULO I HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1>CARLOS GONZALEZ</h1>
+      <nav>
+        <a href="#hero">Inicio</a>
+        <a href="#about">Sobre Mi</a>
+        <a href="#projects"> Proyectos </a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section id="hero">
+        <h2 id="hero-title">BIENVENIDO A MI SITIO WEB</h2>
+        <figure>
+          <img src="assets/avatar.jpg" alt="avatar" />
+          <figcaption>Desarrollador web en Formación</figcaption>
+        </figure>
+      </section>
+      <section id="about">
+        <h2 id="about-title">Sobre Mi</h2>
+        <p>
+          Soy Aprendiz de desarrollo web, interesado en accesibilidad y disño
+          responisvo
+        </p>
+        <p>
+          Busco construir interfaces claras, rápidas y usables para todas las
+          personas
+        </p>
+      </section>
+      <section id="projects">
+        <h2 id="projects-title">Proyectos</h2>
+        <article>
+          <h3 id="proj-1-title">PROYECTO 1 - MARCADO SEMANTICO</h3>
+          <p>
+            Ejercicio de estructura HTML5 con landmarks y jerarquia correcta
+          </p>
+          <a href="#" title="Ver detalles del proyecto">Ver más</a>
+        </article>
+        <article>
+          <h3 id="proj-2-title">PROYECTO 2 - TABLA ACCESIBLE</h3>
+          <p>
+            Tabla con <code>caption</code>, <code>thead</code> y
+            <code>scope</code> para una lectura correcta
+          </p>
+          <a href="#" title="Ver detalles del proyecto">Ver más</a>
+        </article>
+
+        <h3>HABILIDADES</h3>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Habilidad</th>
+              <th scope="col">Nivel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">HTML</th>
+              <td>Básico</td>
+            </tr>
+            -
+            <tr>
+              <th scope="row">CSS</th>
+              <td>Básico</td>
+            </tr>
+            <tr>
+              <th scope="row">Accessibilidad</th>
+              <td>Inicial</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contact">
+        <h2 id="contact-title">Contacto</h2>
+        <p>
+          ESCRIBEME A 
+          <a href="mailto:alyconr@hotmail.com">alyconr@hotmail.com</a>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <a href="#content">VOLVER ARRIBA</a>
+    </footer>
+  </body>
+</html>
