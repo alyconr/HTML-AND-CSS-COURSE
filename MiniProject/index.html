@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+</html>
+<!-- filepath: c:\Users\USUARIO\Documents\ADSO\MODULOS HTML-CSS\MiniProject\index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ficha de producto accesible</title>
+</head>
+<body>
+  <a id="top" aria-hidden="true"></a>
+
+  <header role="banner">
+    <h1>Auriculares inalámbricos Modelo A12</h1>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#indice">Índice</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#especificaciones">Especificaciones</a></li>
+        <li><a href="#descripcion">Descripción</a></li>
+        <li><a href="#contacto">Comprar / Información</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <!-- Índice interno (opcional) -->
+    <nav id="indice" aria-label="Índice del producto">
+      <h2>Índice</h2>
+      <ul>
+        <li><a href="#galeria">Galería de imágenes</a></li>
+        <li><a href="#especificaciones">Especificaciones técnicas</a></li>
+        <li><a href="#descripcion">Descripción detallada</a></li>
+        <li><a href="#garantias">Garantías y políticas</a></li>
+        <li><a href="#contacto">Comprar / Solicitar información</a></li>
+      </ul>
+      <p><a href="#top">Volver arriba</a></p>
+    </nav>
+
+    <!-- Galería -->
+    <section id="galeria" aria-labelledby="galeria-heading">
+      <h2 id="galeria-heading">Galería</h2>
+
+      <figure>
+        <img src="images/auriculares-a12-frontal.jpg" alt="Auriculares A12 en color negro, vista frontal" width="600" />
+        <figcaption>Vista frontal del auricular A12 con almohadillas ergonómicas.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/auriculares-a12-trasera.jpg" alt="Estuche de carga cerrado del auricular A12, acabado mate" width="600" />
+        <figcaption>Estuche de carga compacto con indicador LED.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/auriculares-a12-en-uso.jpg" alt="Persona usando auriculares A12 mientras camina por la ciudad" width="600" />
+        <figcaption>Uso en movilidad: diseño ligero y ajuste seguro.</figcaption>
+      </figure>
+
+      <p><a href="#top">Volver arriba</a></p>
+    </section>
+
+    <!-- Especificaciones en tabla accesible -->
+    <section id="especificaciones" aria-labelledby="especificaciones-heading">
+      <h2 id="especificaciones-heading">Especificaciones técnicas</h2>
+
+      <table>
+        <caption>Ficha técnica del Auricular A12</caption>
+        <thead>
+          <tr>
+            <th scope="col">Característica</th>
+            <th scope="col">Detalle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Tipo</th>
+            <td>Inalámbrico TWS (verdadero inalámbrico)</td>
+          </tr>
+          <tr>
+            <th scope="row">Conectividad</th>
+            <td>Bluetooth 5.2</td>
+          </tr>
+          <tr>
+            <th scope="row">Autonomía</th>
+            <td>Hasta 8 horas por carga (32 horas con estuche)</td>
+          </tr>
+          <tr>
+            <th scope="row">Cancelación de ruido</th>
+            <td>Cancelación activa de ruido (ANC)</td>
+          </tr>
+          <tr>
+            <th scope="row">Peso</th>
+            <td>9 g por auricular</td>
+          </tr>
+          <tr>
+            <th scope="row">Resistencia</th>
+            <td>IPX4 (resistente a salpicaduras)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><a href="#top">Volver arriba</a></p>
+    </section>
+
+    <!-- Descripción con article y subtítulos -->
+    <section id="descripcion" aria-labelledby="descripcion-heading">
+      <h2 id="descripcion-heading">Descripción</h2>
+
+      <article aria-labelledby="caracteristicas-heading">
+        <h3 id="caracteristicas-heading">Características principales</h3>
+        <p>Los Auriculares A12 combinan sonido de alta fidelidad con diseño cómodo para uso diario. La cancelación activa de ruido mejora la experiencia en entornos ruidosos y el estuche de carga ofrece recargas rápidas.</p>
+
+        <h3 id="diseño-heading">Diseño y comodidad</h3>
+        <p>Almohadillas de silicona en tres tamaños, almohadillas ergonómicas y un perfil ligero para un ajuste seguro durante actividades físicas.</p>
+
+        <h3 id="uso-heading">Conectividad y funciones</h3>
+        <p>Emparejamiento automático, controles táctiles para llamadas y reproducción, y compatibilidad con asistentes de voz.</p>
+
+        <p><a href="#top">Volver arriba</a></p>
+      </article>
+    </section>
+
+    <!-- Aside con garantías o políticas -->
+    <aside id="garantias" aria-labelledby="garantias-heading" role="complementary">
+      <h2 id="garantias-heading">Garantías y políticas</h2>
+      <ul>
+        <li>Garantía limitada de 2 años por defectos de fabricación.</li>
+        <li>Política de devolución de 30 días con reembolso completo si el producto está en condiciones originales.</li>
+        <li>Soporte técnico vía correo y teléfono durante el horario laboral.</li>
+      </ul>
+      <p><a href="#top">Volver arriba</a></p>
+    </aside>
+
+    <!-- Contacto / CTA -->
+    <section id="contacto" aria-labelledby="contacto-heading">
+      <h2 id="contacto-heading">Comprar / Solicitar información</h2>
+
+      <p>Seleccione una opción para proceder con la compra o solicitar más detalles.</p>
+
+      <ul>
+        <li><a href="mailto:ventas@example.com?subject=Información%20Auriculares%20A12" aria-label="Enviar correo para solicitar información">Solicitar información por correo</a></li>
+        <li><a href="#formulario-de-compra" aria-label="Ir al formulario de compra en esta página">Comprar ahora (ir al formulario)</a></li>
+      </ul>
+
+      <form id="formulario-de-compra" action="#" method="post" aria-labelledby="formulario-heading">
+        <h3 id="formulario-heading">Formulario de compra (simulado)</h3>
+        <p>
+          <label for="nombre">Nombre:</label><br />
+          <input id="nombre" name="nombre" type="text" required />
+        </p>
+        <p>
+          <label for="correo">Correo electrónico:</label><br />
+          <input id="correo" name="correo" type="email" required />
+        </p>
+        <p>
+          <label for="cantidad">Cantidad:</label><br />
+          <input id="cantidad" name="cantidad" type="number" min="1" value="1" />
+        </p>
+        <p>
+          <button type="submit">Comprar</button>
+          <a href="mailto:ventas@example.com?subject=Comprar%20Auriculares%20A12">Solicitar información por correo</a>
+        </p>
+      </form>
+
+      <p><a href="#top">Volver arriba</a></p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>Contacto: ventas@example.com — Tel: +57 300 000 0000</p>
+    <p>Dirección: Calle Ejemplo 123, Ciudad, País.</p>
+  </footer>
+</body>
+</html>

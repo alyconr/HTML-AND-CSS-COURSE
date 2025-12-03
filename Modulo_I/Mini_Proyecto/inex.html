@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ficha de producto — Nombre del producto</title>
+  <!-- Sin CSS: este archivo es solo maquetado/semántica -->
+  <meta name="description" content="Ficha accesible de producto con galería, especificaciones y CTA.">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div>
+      <a href="/" aria-label="Inicio">
+        <!-- Sustituye por tu logotipo (si es decorativo, alt="") -->
+        <img src="assets/imgs/logo.svg" alt="Marca Ejemplo" width="120" height="32">
+      </a>
+    </div>
+
+    <!-- Navegación interna por anclas -->
+    <nav aria-label="Navegación de secciones">
+      <ul>
+        <li><a href="#detalles" aria-current="page">Detalles</a></li>
+        <li><a href="#especificaciones">Especificaciones</a></li>
+        <li><a href="#descripcion">Descripción</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="contenido-principal">
+    <!-- Sección de galería -->
+    <section id="detalles" aria-labelledby="titulo-detalles">
+      <h1 id="titulo-detalles">Nombre del producto</h1>
+
+      <figure>
+        <!-- Imagen principal del producto -->
+        <img
+          src="assets/imgs/producto_principal.png"
+          alt="Producto ‘Nombre del producto’ en color grafito, vista frontal."
+          width="900" height="600">
+        <figcaption>Nombre del producto · Color grafito · 128 GB</figcaption>
+      </figure>
+
+      <!-- Miniaturas (thumbnails) como navegación auxiliar dentro de la galería -->
+      <div aria-label="Miniaturas de la galería">
+        <a href="assets/imgs/producto-principal.jpg">
+          <img src="assets/imgs/thumb-1.jpg" alt="Vista frontal del producto">
+        </a>
+        <a href="assets/imgs/producto-lateral.jpg">
+          <img src="assets/imgs/thumb-2.jpg" alt="Vista lateral del producto">
+        </a>
+        <a href="assets/imgs/producto-trasera.jpg">
+          <img src="assets/imgs/thumb-3.jpg" alt="Vista trasera del producto">
+        </a>
+      </div>
+    </section>
+
+    <!-- ESPECIFICACIONES (tabla accesible) -->
+    <section id="especificaciones" aria-labelledby="titulo-especificaciones">
+      <h2 id="titulo-especificaciones">Especificaciones</h2>
+
+      <table>
+        <caption>Tabla de especificaciones del producto</caption>
+        <thead>
+          <tr>
+            <th scope="col">Especificación</th>
+            <th scope="col">Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Dimensiones</th>
+            <td>146 × 71 × 7.4 mm</td>
+          </tr>
+          <tr>
+            <th scope="row">Peso</th>
+            <td>172 g</td>
+          </tr>
+          <tr>
+            <th scope="row">Pantalla</th>
+            <td>6.1" OLED</td>
+          </tr>
+          <tr>
+            <th scope="row">Almacenamiento</th>
+            <td>128 GB</td>
+          </tr>
+          <tr>
+            <th scope="row">Batería</th>
+            <td>3,200 mAh</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- DESCRIPCIÓN (article) -->
+    <section id="descripcion" aria-labelledby="titulo-descripcion">
+      <h2 id="titulo-descripcion">Descripción</h2>
+
+      <article aria-labelledby="subtitulo-descripcion">
+        <h3 id="subtitulo-descripcion">Resumen</h3>
+        <p>
+          El producto ‘Nombre del producto’ ofrece una experiencia equilibrada entre rendimiento,
+          diseño y autonomía. Ideal para uso diario, fotografía y productividad ligera.
+        </p>
+
+        <h3>Características clave</h3>
+        <ul>
+          <li>Materiales de alta calidad y acabado resistente.</li>
+          <li>Pantalla OLED con excelente contraste.</li>
+          <li>Cámara principal con modo nocturno.</li>
+          <li>Carga rápida y batería optimizada.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- CTA -->
+    <section aria-labelledby="titulo-cta">
+      <h2 id="titulo-cta">Compra o solicita información</h2>
+      <!-- role="group" para asociar acciones relacionadas -->
+      <div role="group" aria-label="Acciones de compra">
+        <a href="#contacto">Solicitar información</a>
+        <a href="#contacto">Comprar ahora</a>
+      </div>
+    </section>
+
+    <!-- ASIDE opcional (políticas, garantía, envíos) -->
+    <aside aria-labelledby="titulo-aside">
+      <h2 id="titulo-aside">Garantía, envíos y políticas</h2>
+      <p>Garantía de 12 meses. Envíos a todo el país en 48–72 h. Devoluciones en 7 días.</p>
+      <ul>
+        <li>Garantía: 12 meses por defectos de fabricación.</li>
+        <li>Envío: gratuito a partir de $100.</li>
+        <li>Devoluciones: dentro de 7 días con empaque original.</li>
+      </ul>
+    </aside>
+
+    <!-- ÍNDICE interno de secciones (enlaces de saltos) -->
+    <nav aria-label="Índice interno de la página">
+      <ul>
+        <li><a href="#detalles">Galería</a></li>
+        <li><a href="#especificaciones">Especificaciones</a></li>
+        <li><a href="#descripcion">Descripción</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- CONTACTO (ancla para CTA) -->
+    <section id="contacto" aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto">Contacto</h2>
+      <p>
+        Escríbenos a
+        <a href="mailto:ventas@example.com">ventas@example.com</a>
+        o llama al <a href="tel:+5710000000">+57 1 000 0000</a>.
+      </p>
+      <address>
+        Av. Principal #123, Bogotá, Colombia
+      </address>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <nav aria-label="Enlaces de utilidad">
+      <ul>
+        <li><a href="#contenido-principal">Volver arriba</a></li>
+        <li><a href="/terminos">Términos y condiciones</a></li>
+        <li><a href="/privacidad">Política de privacidad</a></li>
+      </ul>
+    </nav>
+    <small>© 2025 Marca Ejemplo</small>
+  </footer>
+</body>
+</html>
